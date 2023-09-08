@@ -3,7 +3,7 @@ import React from "react";
 function AboutUs() {
   return (
     <>
-      <h1 className="text-center text-3xl font-bold pt-16">About Us</h1>
+      <h1 className="text-center text-3xl font-bold pt-20">About Us</h1>
       <div className="pt-3">
         <p className="text-center md:px-56 px-5 font-medium md:text-xl">
           Our mission is to foster a dynamic and inclusive community of

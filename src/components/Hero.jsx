@@ -3,7 +3,7 @@ import mlsclogo from "../assets/New Project.png";
 
 function Hero() {
   return (
-    <div className="flex flex-col justify-center items-center mt-4 md:mt-12 px-5">
+    <div className="flex flex-col justify-center items-center mt-10 md:mt-12 px-5">
       <div className="flex flex-col mb-4">
         <p className="text-5xl font-[800] font-dm-serif-display text-center">
           <span className="text-primary">MLSC</span> GHRCEM <br />
