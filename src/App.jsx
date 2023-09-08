@@ -1,12 +1,10 @@
 import "./App.css";
+import Navbar from "./components/Navbar.jsx";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>MLSC Website</h1>
-        <p>Jai Shree Ram!</p>
-      </div>
+      <Navbar />
     </>
   );
 }
