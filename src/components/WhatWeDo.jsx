@@ -6,8 +6,10 @@ import technical from "../assets/whatwedo-icons/projects.png";
 function WhatWeDo() {
   return (
     <>
-      <h1 className="text-center text-3xl font-bold pt-20">What we do?</h1>
-      <div className="flex justify-center items-center px-5 pt-8">
+      <h1 className="text-center text-4xl font-bold md:pt-32 pt-20">
+        What we do?
+      </h1>
+      <div className="flex justify-center items-center px-5 pt-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="bg-[#F6F6F7] p-2 rounded-lg hover:bg-gray-200">
             <div className="p-3">
