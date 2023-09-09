@@ -8,7 +8,9 @@ function Hero() {
         <p className="text-6xl font-[800] font-dm-serif-display text-center">
           <span className="text-primary">MLSC</span> GHRCEM <br />
         </p>
-        <p className="text-center pt-2 font-medium">We Build; Don't Talk</p>
+        <p className="text-center text-xl pt-2 font-medium">
+          Learn. Collaborate. Build.
+        </p>
       </div>
       <div></div>
       <div>

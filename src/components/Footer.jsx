@@ -15,7 +15,7 @@ function Footer() {
       <div className="">
         <img src={mlsclogo} alt="" className="w-24" />
         <h1 className="text-2xl font-bold">MLSC GHRCEM</h1>
-        <p className="text-lg">We Build; Don't Talk</p>
+        <p className="text-lg">Learn. Collaborate. Build.</p>
       </div>
       <div className="md:mt-3 mt-5">
         <div>
