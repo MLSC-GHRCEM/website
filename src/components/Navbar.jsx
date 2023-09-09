@@ -71,7 +71,7 @@ function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   className="block py-2 pl-3 pr-4 text-secondary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
                   aria-current="page"
                 >
@@ -80,7 +80,7 @@ function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#what"
                   className="block py-2 pl-3 pr-4 text-secondary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0  "
                   aria-current="page"
                 >
@@ -89,7 +89,7 @@ function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   className="block py-2 pl-3 pr-4 text-secondary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0  "
                   aria-current="page"
                 >
