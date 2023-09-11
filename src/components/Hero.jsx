@@ -12,7 +12,16 @@ function Hero() {
           Learn. Collaborate. Build.
         </p>
       </div>
-      <div></div>
+      <div>
+        <a
+          href="https://forms.office.com/r/WQVgJN3ZbA
+"
+          className="bg-primary py-2 px-3 rounded-full"
+          target="_blank"
+        >
+          Apply Now
+        </a>
+      </div>
       <div>
         <img src={mlsclogo} alt="hero-img" className="w-[500px] pt-4" />
       </div>

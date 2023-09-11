@@ -2,7 +2,7 @@ import React from "react";
 import mlsclogo from "../assets/MLSC Logo Changed.png";
 import instagram from "../assets/socials/icons8-instagram-48.png";
 import twitter from "../assets/socials/icons8-twitter-48.png";
-import youtube from "../assets/socials/icons8-youtube-48.png";
+import github from "../assets/socials/icons8-github-48.png";
 import whatsapp from "../assets/socials/icons8-whatsapp-48.png";
 import linkedin from "../assets/socials/icons8-linkedin-48.png";
 
@@ -45,12 +45,12 @@ function Footer() {
                 target="_blank"
               />
             </a>
-            <a href="https://twitter.com/mlsc_ghrcem" target="_blank">
+            <a href="https://github.com/MLSC-GHRCEM" target="_blank">
               <img src={twitter} alt="logo-twt" className="w-9 h-9" />
             </a>
             <a href="">
               <img
-                src={youtube}
+                src={github}
                 alt="logo-yt"
                 target="_blank"
                 className="w-9 h-9"
