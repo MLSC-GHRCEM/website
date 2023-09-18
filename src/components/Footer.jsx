@@ -48,7 +48,7 @@ function Footer() {
             <a href="https://twitter.com/mlsc_ghrcem" target="_blank">
               <img src={twitter} alt="logo-twt" className="w-9 h-9" />
             </a>
-            <a href="https://github.com/MLSC-GHRCEM">
+            <a href="https://github.com/MLSC-GHRCEM" target="_blank">
               <img
                 src={github}
                 alt="logo-yt"

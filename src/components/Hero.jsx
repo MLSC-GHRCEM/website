@@ -14,7 +14,7 @@ function Hero() {
       </div>
       <div>
         <a
-          href="https://forms.office.com/r/WQVgJN3ZbA
+          href="https://forms.office.com/r/CRFrcmN2jG
 "
           className="bg-primary py-2 px-3 rounded-full"
           target="_blank"
