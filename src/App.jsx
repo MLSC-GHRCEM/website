@@ -1,20 +1,19 @@
 import "./App.css";
-import AboutUs from "./components/AboutUs";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar.jsx";
-import Team from "./components/Team";
-import WhatWeDo from "./components/WhatWeDo";
+import Home from "./pages/Home";
+import Events from "./components/Events";
+import {Route,Routes} from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <AboutUs />
-      <WhatWeDo />
-      {/* <Team /> */}
-      <Footer />
+
+    <Routes>
+
+    <Route path='/' element={<Home/>}/>
+      <Route path='/events' element={<Events/>}/>
+     
+    </Routes>
+      
     </>
   );
 }
