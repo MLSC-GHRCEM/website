@@ -1,5 +1,5 @@
 import React from "react";
-import mlsclogo from "../assets/New Project.png";
+import mlsclogo from "../../assets/New Project.png";
 
 function Hero() {
   return (

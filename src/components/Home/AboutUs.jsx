@@ -1,5 +1,5 @@
 import React from "react";
-import aboutus from "../assets/whatwedo-icons/aboutus.png";
+import aboutus from "../../assets/whatwedo-icons/aboutus.png";
 
 function AboutUs() {
   return (

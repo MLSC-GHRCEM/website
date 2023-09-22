@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import mlsclogo from "../assets/MLSC Logo Changed.png";
+import mlsclogo from "../../assets/MLSC Logo Changed.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -87,14 +87,14 @@ function Navbar() {
                   What we Do?
                 </a>
               </li>
-              
+
               <li>
                 <a
                   href="/events"
                   className="block py-2 pl-3 pr-4 text-secondary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0  "
                   aria-current="page"
                 >
-                 Events
+                  Events
                 </a>
               </li>
               <li>

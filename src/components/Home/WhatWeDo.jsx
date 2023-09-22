@@ -1,9 +1,9 @@
 import React from "react";
-import event from "../assets/whatwedo-icons/events.png";
-import opensource from "../assets/whatwedo-icons/open-source.png";
-import technical from "../assets/whatwedo-icons/projects.png";
-import networking from "../assets/whatwedo-icons/networking.png";
-import hackathon from "../assets/whatwedo-icons/icons8-hackathon-64.png";
+import event from "../../assets/whatwedo-icons/events.png";
+import opensource from "../../assets/whatwedo-icons/open-source.png";
+import technical from "../../assets/whatwedo-icons/projects.png";
+import networking from "../../assets/whatwedo-icons/networking.png";
+import hackathon from "../../assets/whatwedo-icons/icons8-hackathon-64.png";
 
 function WhatWeDo() {
   return (

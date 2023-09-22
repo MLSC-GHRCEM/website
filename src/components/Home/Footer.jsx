@@ -1,10 +1,10 @@
 import React from "react";
-import mlsclogo from "../assets/MLSC Logo Changed.png";
-import instagram from "../assets/socials/icons8-instagram-48.png";
-import twitter from "../assets/socials/icons8-twitter-48.png";
-import github from "../assets/socials/icons8-github-48.png";
-import whatsapp from "../assets/socials/icons8-whatsapp-48.png";
-import linkedin from "../assets/socials/icons8-linkedin-48.png";
+import mlsclogo from "../../assets/MLSC Logo Changed.png";
+import instagram from "../../assets/socials/icons8-instagram-48.png";
+import twitter from "../../assets/socials/icons8-twitter-48.png";
+import github from "../../assets/socials/icons8-github-48.png";
+import whatsapp from "../../assets/socials/icons8-whatsapp-48.png";
+import linkedin from "../../assets/socials/icons8-linkedin-48.png";
 
 function Footer() {
   return (

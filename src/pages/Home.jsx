@@ -1,22 +1,20 @@
-import React from 'react'
-import AboutUs from "../components/AboutUs";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar.jsx";
-import Team from "../components/Team";
-import WhatWeDo from "../components/WhatWeDo";
+import React from "react";
+import AboutUs from "../components/Home/AboutUs";
+import Hero from "../components/Home/Hero";
+import WhatWeDo from "../components/Home/WhatWeDo";
+import Layout from "../components/Layout";
+
 function Home() {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <AboutUs />
-      <WhatWeDo />
-   
-      {/* <Team /> */}
-      <Footer />
+      <Layout>
+        <Hero />
+        <AboutUs />
+        <WhatWeDo />
+        {/* <Team /> */}
+      </Layout>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
