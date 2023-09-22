@@ -9,7 +9,7 @@ import linkedin from "../assets/socials/icons8-linkedin-48.png";
 function Footer() {
   return (
     <footer
-      className="flex flex-col md:flex-row  justify-between mt-20 py-8 lg:px-72 bg-[#E5E7EB] px-8"
+      className="flex flex-col md:flex-row  justify-between mt-20 py-8 lg:px-72 bg-[#E5E7EB] px-8 "
       id="contact"
     >
       <div className="">
