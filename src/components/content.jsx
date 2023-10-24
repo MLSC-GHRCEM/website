@@ -1,6 +1,7 @@
 export const eventdata = [
   {
     id: 1,
+    slug: "git-github",
     title: "Git & Github",
     description: "Learn Git & Github",
     image:
@@ -8,14 +9,11 @@ export const eventdata = [
   },
   {
     id: 2,
-    title: "Hacktoberfest",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBICPHJ86kQ-y6p2-Z9K_ibEbYmVmo6Eda-w&usqp=CAU",
-  },
-  {
-    id: 3,
-    title: "Hacktoberfest",
+    slug: "hactoberfest-jam",
+    title: "Hacktoberfest JAM 2023",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBICPHJ86kQ-y6p2-Z9K_ibEbYmVmo6Eda-w&usqp=CAU",
   },
 ];
+
+
