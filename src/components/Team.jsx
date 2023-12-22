@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
+import kirtan from "../assets/team/kirtan.jpg";
 
 function Team() {
   const team = [
@@ -7,8 +8,7 @@ function Team() {
       id: 1,
       name: "Kirtan Chandak",
       role: "Lead",
-      image:
-        "https://static.vecteezy.com/system/resources/previews/004/991/321/original/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-vector.jpg",
+      image: kirtan,
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ function Team() {
               id={member.id}
             >
               <img
-                src="https://static.vecteezy.com/system/resources/previews/004/991/321/original/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-vector.jpg"
+                src={member.image}
                 alt=""
                 className="rounded-tl rounded-tr w-64"
               />
