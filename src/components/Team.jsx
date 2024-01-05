@@ -1,58 +1,123 @@
-import React from "react";
-import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
-import kirtan from "../assets/team/kirtan.jpg";
+import React, { useState } from "react";
+import TeamElement from "./Home/TeamElement";
+import { TeamInformation } from "../components/Home/TeamInformation";
 
-function Team() {
-  const team = [
-    {
-      id: 1,
-      name: "Kirtan Chandak",
-      role: "Lead",
-      image: kirtan,
-    },
-    {
-      id: 2,
-      name: "Devyani Chavan",
-      role: "Co-Lead",
-      image:
-        "https://static.vecteezy.com/system/resources/previews/004/991/321/original/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-vector.jpg",
-    },
-  ];
+const Team = () => {
+  const [room, setRoom] = useState(1);
+
   return (
-    <>
-      <h1 className="text-center text-4xl font-bold md:pt-32 pt-12">Team</h1>
-      <div className="px-5 pt-8 flex items-center justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-4">
-          {team.map((member) => (
-            <div
-              className="bg-[#F5F7FB] rounded-lg my-2 w-full pb-2 px-2 py-2 cursor-pointer transform transition-transform hover:-translate-y-2"
-              id={member.id}
-            >
-              <img
-                src={member.image}
-                alt=""
-                className="rounded-tl rounded-tr w-64"
-              />
-              <div className="flex flex-col items-center justify-center">
-                <h1 className="font-bold text-primary text-md py-1 text-center">
-                  {member.name}
-                </h1>
-                <h3 className="font-xs text-primary -mt-1">{member.role}</h3>
-                <div className="flex flex-row space-x-1">
-                  <a href="" target="_blank">
-                    <AiFillTwitterCircle size={25} color="#1CB7EB" />
-                  </a>
-                  <a href="" target="_blank">
-                    <AiFillLinkedin size={25} color="#007BB5" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
+    <div
+      className="lg:px-40 px-8 pt-4 flex flex-col items-center justify-center space-y-8 py-4"
+      id="volunteers"
+    >
+      <h1 className="text-4xl text-[#00133B] font-bold md:pt-32 pt-20">Team</h1>
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap justify-center items-center gap-4 px-6 lg:px-0">
+          <button
+            className={
+              room == 1
+                ? "bg-primary text-white py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+                : "bg-[#F5f7fb]  py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+            }
+            onClick={() => setRoom(1)}
+          >
+            Leads{" "}
+          </button>
+          <button
+            className={
+              room == 2
+                ? "bg-primary  text-white py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+                : "bg-[#F5f7fb] py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+            }
+            onClick={() => setRoom(2)}
+          >
+            Tech
+          </button>
+          <button
+            className={
+              room == 3
+                ? "bg-primary  text-white py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+                : "bg-[#F5f7fb] py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+            }
+            onClick={() => setRoom(3)}
+          >
+            Design{" "}
+          </button>
+          <button
+            className={
+              room == 4
+                ? "bg-primary  text-white py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+                : "bg-[#F5f7fb] py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+            }
+            onClick={() => setRoom(4)}
+          >
+            PR{" "}
+          </button>
+          <button
+            className={
+              room == 5
+                ? "bg-primary  text-white py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+                : "bg-[#F5f7fb] py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+            }
+            onClick={() => setRoom(5)}
+          >
+            Event Management
+          </button>
+          <button
+            className={
+              room == 6
+                ? "bg-primary  text-white py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+                : "bg-[#F5f7fb] py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+            }
+            onClick={() => setRoom(6)}
+          >
+            Content
+          </button>
+          <button
+            className={
+              room == 7
+                ? "bg-primary  text-white py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+                : "bg-[#F5f7fb] py-1 lg:px-5 px-2 lg:text-lg text-sm rounded-sm"
+            }
+            onClick={() => setRoom(7)}
+          >
+            Social Media
+          </button>
+        </div>
+        <div className="flex flex-wrap items-center my-8  justify-center  px-4 ">
+          {room == 1 &&
+            TeamInformation.filter((item) => item.type === "leads").map(
+              (item) => <TeamElement organizer={item} />
+            )}
+          {room == 2 &&
+            TeamInformation.filter((item) => item.type === "tech").map(
+              (item) => <TeamElement organizer={item} />
+            )}
+          {room == 3 &&
+            TeamInformation.filter((item) => item.type === "design").map(
+              (item) => <TeamElement organizer={item} />
+            )}
+
+          {room == 4 &&
+            TeamInformation.filter((item) => item.type === "pr").map((item) => (
+              <TeamElement organizer={item} />
+            ))}
+          {room == 5 &&
+            TeamInformation.filter((item) => item.type === "event").map(
+              (item) => <TeamElement organizer={item} />
+            )}
+          {room == 6 &&
+            TeamInformation.filter((item) => item.type === "content").map(
+              (item) => <TeamElement organizer={item} />
+            )}
+          {room == 7 &&
+            TeamInformation.filter((item) => item.type === "social").map(
+              (item) => <TeamElement organizer={item} />
+            )}
         </div>
       </div>
-    </>
+    </div>
   );
-}
+};
 
 export default Team;
